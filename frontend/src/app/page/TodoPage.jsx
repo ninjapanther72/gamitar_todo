@@ -130,7 +130,7 @@ const TodoPage = () => {
             showCheckItemEditButton={true}
             showCheckItemRemoveButton={true}
             showCheckItemTooltipLimit={86}
-            listHeight={'65vh'}
+            listHeight={'50vh'}
             showSelectedCountText={'Completed'}
 
             //select
