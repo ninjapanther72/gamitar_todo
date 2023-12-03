@@ -1,0 +1,7 @@
+Credentials:
+
+DB_HOST=localhost
+DB_NAME=gamitar_todo_db
+DB_USER=root
+DB_PW
+DB_PORT=3306

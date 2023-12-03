@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Dec 03, 2023 at 03:25 PM
+- Server version: 10.4.28-MariaDB
+- PHP Version: 8.0.28
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="gamitar_todo_db" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="todo_items">
+                CREATE TABLE `todo_items` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `name` longtext NOT NULL,
+                  `description` longtext DEFAULT NULL,
+                  `priority` longtext DEFAULT NULL,
+                  `completed` int(2) DEFAULT NULL,
+                  `username` varchar(500) DEFAULT NULL,
+                  `created_date` varchar(100) DEFAULT NULL,
+                  `completed_date` varchar(100) DEFAULT NULL,
+                  `modified_date` datetime DEFAULT current_timestamp(),
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+            <pma:table name="user_data">
+                CREATE TABLE `user_data` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `username` varchar(500) DEFAULT NULL,
+                  `email` varchar(100) NOT NULL,
+                  `password` varchar(100) NOT NULL,
+                  `mobile` varchar(100) NOT NULL,
+                  `first_name` varchar(100) NOT NULL,
+                  `last_name` varchar(200) NOT NULL,
+                  `active` int(2) DEFAULT NULL,
+                  `created_date` varchar(100) DEFAULT NULL,
+                  `modified_date` datetime DEFAULT current_timestamp(),
+                  `deleted_date` varchar(100) DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'gamitar_todo_db'
+    -->
+    <database name="gamitar_todo_db">
+        <!-- Table todo_items -->
+        <table name="todo_items">
+            <column name="id">1</column>
+            <column name="name">Finish Report</column>
+            <column name="description">Complete the quarterly report for the team meeting</column>
+            <column name="priority">High</column>
+            <column name="completed">1</column>
+            <column name="username">john_doe</column>
+            <column name="created_date">2023-01-01 08:00:00</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-11-30 21:49:17</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">2</column>
+            <column name="name">Client Meeting</column>
+            <column name="description">Prepare for the upcoming client meeting at 2 PM</column>
+            <column name="priority">Medium</column>
+            <column name="completed">1</column>
+            <column name="username">john_doe</column>
+            <column name="created_date">2023-01-02 10:30:00</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-11-30 21:49:17</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">3</column>
+            <column name="name">Project Review</column>
+            <column name="description">Review the progress of ongoing project tasks</column>
+            <column name="priority">Low</column>
+            <column name="completed">1</column>
+            <column name="username">john_doe</column>
+            <column name="created_date">2023-01-03 14:45:00</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-11-30 21:49:17</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">4</column>
+            <column name="name">Code Refactoring</column>
+            <column name="description">Refactor the code for improved performance</column>
+            <column name="priority">High</column>
+            <column name="completed">1</column>
+            <column name="username">john_doe</column>
+            <column name="created_date">2023-01-04 16:15:00</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-11-30 21:49:17</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">5</column>
+            <column name="name">Team Collaboration</column>
+            <column name="description">Collaborate with team members on the new feature implementation</column>
+            <column name="priority">Medium</column>
+            <column name="completed">0</column>
+            <column name="username">john_doe</column>
+            <column name="created_date">2023-01-05 18:30:00</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-11-30 21:49:17</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">6</column>
+            <column name="name">Training Session</column>
+            <column name="description">Attend the online training session on new technologies</column>
+            <column name="priority">Low</column>
+            <column name="completed">0</column>
+            <column name="username">john_doe</column>
+            <column name="created_date">2023-01-06 20:45:00</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-11-30 21:49:17</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">7</column>
+            <column name="name">Bug Fixing</column>
+            <column name="description">Fix reported bugs in the application</column>
+            <column name="priority">High</column>
+            <column name="completed">0</column>
+            <column name="username">john_doe</column>
+            <column name="created_date">2023-01-07 22:15:00</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-11-30 21:49:17</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">8</column>
+            <column name="name">Documentation</column>
+            <column name="description">Update project documentation with recent changes</column>
+            <column name="priority">Medium</column>
+            <column name="completed">0</column>
+            <column name="username">bob_jackson</column>
+            <column name="created_date">2023-01-08 23:45:00</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-11-30 21:49:17</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">9</column>
+            <column name="name">Testing Phase</column>
+            <column name="description">Initiate the testing phase for the software release</column>
+            <column name="priority">Low</column>
+            <column name="completed">0</column>
+            <column name="username">alice_miller</column>
+            <column name="created_date">2023-01-09 09:30:00</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-11-30 21:49:17</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">10</column>
+            <column name="name">Release Planning</column>
+            <column name="description">Plan for the upcoming software release</column>
+            <column name="priority">High</column>
+            <column name="completed">0</column>
+            <column name="username">jane_smith</column>
+            <column name="created_date">2023-01-10 11:15:00</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-11-30 21:49:17</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">18</column>
+            <column name="name">Web design for that client</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">john_doe</column>
+            <column name="created_date">Sat Dec 02 2023 22:08:46 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-02 22:08:46</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">20</column>
+            <column name="name">test</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">john_doe</column>
+            <column name="created_date">Sun Dec 03 2023 15:42:18 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-03 15:42:18</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">21</column>
+            <column name="name">test2</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">john_doe</column>
+            <column name="created_date">Sun Dec 03 2023 15:42:39 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-03 15:42:39</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">22</column>
+            <column name="name">test</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">bob_jackson</column>
+            <column name="created_date">Sun Dec 03 2023 15:48:18 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-03 15:48:18</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">23</column>
+            <column name="name">test 2</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">bob_jackson</column>
+            <column name="created_date">Sun Dec 03 2023 15:48:20 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-03 15:48:20</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">24</column>
+            <column name="name">test 3</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">bob_jackson</column>
+            <column name="created_date">Sun Dec 03 2023 15:48:23 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-03 15:48:23</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">28</column>
+            <column name="name">Xdd</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">jane_smith</column>
+            <column name="created_date">Sun Dec 03 2023 16:43:44 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-03 16:43:44</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">29</column>
+            <column name="name">Test</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">jane_smith</column>
+            <column name="created_date">Sun Dec 03 2023 16:43:46 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-03 16:43:46</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">30</column>
+            <column name="name">Test 5</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">jane_smith</column>
+            <column name="created_date">Sun Dec 03 2023 16:43:48 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-03 16:43:48</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">31</column>
+            <column name="name">Task 1</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">jane_smith</column>
+            <column name="created_date">Sun Dec 03 2023 16:49:37 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-03 16:49:37</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">32</column>
+            <column name="name">Task 2</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">jane_smith</column>
+            <column name="created_date">Sun Dec 03 2023 16:49:41 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-03 16:49:41</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">33</column>
+            <column name="name">Task 3</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">jane_smith</column>
+            <column name="created_date">Sun Dec 03 2023 16:49:44 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-03 16:49:44</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">34</column>
+            <column name="name">Test 26</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">jane_smith</column>
+            <column name="created_date">Sun Dec 03 2023 16:55:32 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-03 16:55:32</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">35</column>
+            <column name="name">Test 77</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">jane_smith</column>
+            <column name="created_date">Sun Dec 03 2023 16:55:35 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-03 16:55:35</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">36</column>
+            <column name="name">adsfasfasf</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">testuser</column>
+            <column name="created_date">Sun Dec 03 2023 19:05:51 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-03 19:05:51</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">38</column>
+            <column name="name">tests2q34</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">testuser</column>
+            <column name="created_date">Sun Dec 03 2023 19:05:55 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-03 19:05:55</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">39</column>
+            <column name="name">sasdfasdf</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">testuser</column>
+            <column name="created_date">Sun Dec 03 2023 19:05:59 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-03 19:05:59</column>
+        </table>
+        <table name="todo_items">
+            <column name="id">40</column>
+            <column name="name">asfasf</column>
+            <column name="description"></column>
+            <column name="priority">None</column>
+            <column name="completed">0</column>
+            <column name="username">john_doe</column>
+            <column name="created_date">Sun Dec 03 2023 19:51:47 GMT+0530 (India Standard Time)</column>
+            <column name="completed_date">NULL</column>
+            <column name="modified_date">2023-12-03 19:51:47</column>
+        </table>
+        <!-- Table user_data -->
+        <table name="user_data">
+            <column name="id">1</column>
+            <column name="username">john_doe</column>
+            <column name="email">johndoe@gmail.com</column>
+            <column name="password">xx</column>
+            <column name="mobile">1234567890</column>
+            <column name="first_name">John</column>
+            <column name="last_name">Doe</column>
+            <column name="active">1</column>
+            <column name="created_date">2023-01-01 12:00:00</column>
+            <column name="modified_date">2023-11-30 21:49:08</column>
+            <column name="deleted_date">NULL</column>
+        </table>
+        <table name="user_data">
+            <column name="id">2</column>
+            <column name="username">jane_smith</column>
+            <column name="email">janesmith@gmail.com</column>
+            <column name="password">xx</column>
+            <column name="mobile">9876543210</column>
+            <column name="first_name">Jane</column>
+            <column name="last_name">Smith</column>
+            <column name="active">1</column>
+            <column name="created_date">2023-01-02 14:30:00</column>
+            <column name="modified_date">2023-11-30 21:49:08</column>
+            <column name="deleted_date">NULL</column>
+        </table>
+        <table name="user_data">
+            <column name="id">3</column>
+            <column name="username">bob_jackson</column>
+            <column name="email">bobjackson@gmail.com</column>
+            <column name="password">test</column>
+            <column name="mobile">5551234567</column>
+            <column name="first_name">Bob</column>
+            <column name="last_name">Jackson</column>
+            <column name="active">1</column>
+            <column name="created_date">2023-01-03 10:45:00</column>
+            <column name="modified_date">2023-11-30 21:49:08</column>
+            <column name="deleted_date">NULL</column>
+        </table>
+        <table name="user_data">
+            <column name="id">4</column>
+            <column name="username">alice_miller</column>
+            <column name="email">alicemiller@gmail.com</column>
+            <column name="password">test_pw</column>
+            <column name="mobile">6667890123</column>
+            <column name="first_name">Alice</column>
+            <column name="last_name">Miller</column>
+            <column name="active">1</column>
+            <column name="created_date">2023-01-04 08:15:00</column>
+            <column name="modified_date">2023-11-30 21:49:08</column>
+            <column name="deleted_date">NULL</column>
+        </table>
+        <table name="user_data">
+            <column name="id">5</column>
+            <column name="username">charlie_brown</column>
+            <column name="email">charliebrow@gmail.com</column>
+            <column name="password">test_pw</column>
+            <column name="mobile">7772345678</column>
+            <column name="first_name">Charlie</column>
+            <column name="last_name">Brown</column>
+            <column name="active">1</column>
+            <column name="created_date">2023-01-05 16:20:00</column>
+            <column name="modified_date">2023-11-30 21:49:08</column>
+            <column name="deleted_date">NULL</column>
+        </table>
+        <table name="user_data">
+            <column name="id">10</column>
+            <column name="username">testuser</column>
+            <column name="email">test@gmail.com</column>
+            <column name="password">test</column>
+            <column name="mobile">34565432</column>
+            <column name="first_name">tests first first</column>
+            <column name="last_name">test last last</column>
+            <column name="active">1</column>
+            <column name="created_date">Sun Dec 03 2023 19:05:22 GMT+0530 (India Standard Time)</column>
+            <column name="modified_date">2023-12-03 19:05:22</column>
+            <column name="deleted_date">NULL</column>
+        </table>
+    </database>
+</pma_xml_export>

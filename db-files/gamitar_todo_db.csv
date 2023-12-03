@@ -1,0 +1,36 @@
+"id","name","description","priority","completed","username","created_date","completed_date","modified_date"
+"1","Finish Report","Complete the quarterly report for the team meeting","High","1","john_doe","2023-01-01 08:00:00",NULL,"2023-11-30 21:49:17"
+"2","Client Meeting","Prepare for the upcoming client meeting at 2 PM","Medium","1","john_doe","2023-01-02 10:30:00",NULL,"2023-11-30 21:49:17"
+"3","Project Review","Review the progress of ongoing project tasks","Low","1","john_doe","2023-01-03 14:45:00",NULL,"2023-11-30 21:49:17"
+"4","Code Refactoring","Refactor the code for improved performance","High","1","john_doe","2023-01-04 16:15:00",NULL,"2023-11-30 21:49:17"
+"5","Team Collaboration","Collaborate with team members on the new feature implementation","Medium","0","john_doe","2023-01-05 18:30:00",NULL,"2023-11-30 21:49:17"
+"6","Training Session","Attend the online training session on new technologies","Low","0","john_doe","2023-01-06 20:45:00",NULL,"2023-11-30 21:49:17"
+"7","Bug Fixing","Fix reported bugs in the application","High","0","john_doe","2023-01-07 22:15:00",NULL,"2023-11-30 21:49:17"
+"8","Documentation","Update project documentation with recent changes","Medium","0","bob_jackson","2023-01-08 23:45:00",NULL,"2023-11-30 21:49:17"
+"9","Testing Phase","Initiate the testing phase for the software release","Low","0","alice_miller","2023-01-09 09:30:00",NULL,"2023-11-30 21:49:17"
+"10","Release Planning","Plan for the upcoming software release","High","0","jane_smith","2023-01-10 11:15:00",NULL,"2023-11-30 21:49:17"
+"18","Web design for that client",,"None","0","john_doe","Sat Dec 02 2023 22:08:46 GMT+0530 (India Standard Time)",NULL,"2023-12-02 22:08:46"
+"20","test",,"None","0","john_doe","Sun Dec 03 2023 15:42:18 GMT+0530 (India Standard Time)",NULL,"2023-12-03 15:42:18"
+"21","test2",,"None","0","john_doe","Sun Dec 03 2023 15:42:39 GMT+0530 (India Standard Time)",NULL,"2023-12-03 15:42:39"
+"22","test",,"None","0","bob_jackson","Sun Dec 03 2023 15:48:18 GMT+0530 (India Standard Time)",NULL,"2023-12-03 15:48:18"
+"23","test 2",,"None","0","bob_jackson","Sun Dec 03 2023 15:48:20 GMT+0530 (India Standard Time)",NULL,"2023-12-03 15:48:20"
+"24","test 3",,"None","0","bob_jackson","Sun Dec 03 2023 15:48:23 GMT+0530 (India Standard Time)",NULL,"2023-12-03 15:48:23"
+"28","Xdd",,"None","0","jane_smith","Sun Dec 03 2023 16:43:44 GMT+0530 (India Standard Time)",NULL,"2023-12-03 16:43:44"
+"29","Test",,"None","0","jane_smith","Sun Dec 03 2023 16:43:46 GMT+0530 (India Standard Time)",NULL,"2023-12-03 16:43:46"
+"30","Test 5",,"None","0","jane_smith","Sun Dec 03 2023 16:43:48 GMT+0530 (India Standard Time)",NULL,"2023-12-03 16:43:48"
+"31","Task 1",,"None","0","jane_smith","Sun Dec 03 2023 16:49:37 GMT+0530 (India Standard Time)",NULL,"2023-12-03 16:49:37"
+"32","Task 2",,"None","0","jane_smith","Sun Dec 03 2023 16:49:41 GMT+0530 (India Standard Time)",NULL,"2023-12-03 16:49:41"
+"33","Task 3",,"None","0","jane_smith","Sun Dec 03 2023 16:49:44 GMT+0530 (India Standard Time)",NULL,"2023-12-03 16:49:44"
+"34","Test 26",,"None","0","jane_smith","Sun Dec 03 2023 16:55:32 GMT+0530 (India Standard Time)",NULL,"2023-12-03 16:55:32"
+"35","Test 77",,"None","0","jane_smith","Sun Dec 03 2023 16:55:35 GMT+0530 (India Standard Time)",NULL,"2023-12-03 16:55:35"
+"36","adsfasfasf",,"None","0","testuser","Sun Dec 03 2023 19:05:51 GMT+0530 (India Standard Time)",NULL,"2023-12-03 19:05:51"
+"38","tests2q34",,"None","0","testuser","Sun Dec 03 2023 19:05:55 GMT+0530 (India Standard Time)",NULL,"2023-12-03 19:05:55"
+"39","sasdfasdf",,"None","0","testuser","Sun Dec 03 2023 19:05:59 GMT+0530 (India Standard Time)",NULL,"2023-12-03 19:05:59"
+"40","asfasf",,"None","0","john_doe","Sun Dec 03 2023 19:51:47 GMT+0530 (India Standard Time)",NULL,"2023-12-03 19:51:47"
+"id","username","email","password","mobile","first_name","last_name","active","created_date","modified_date","deleted_date"
+"1","john_doe","johndoe@gmail.com","xx","1234567890","John","Doe","1","2023-01-01 12:00:00","2023-11-30 21:49:08",NULL
+"2","jane_smith","janesmith@gmail.com","xx","9876543210","Jane","Smith","1","2023-01-02 14:30:00","2023-11-30 21:49:08",NULL
+"3","bob_jackson","bobjackson@gmail.com","test","5551234567","Bob","Jackson","1","2023-01-03 10:45:00","2023-11-30 21:49:08",NULL
+"4","alice_miller","alicemiller@gmail.com","test_pw","6667890123","Alice","Miller","1","2023-01-04 08:15:00","2023-11-30 21:49:08",NULL
+"5","charlie_brown","charliebrow@gmail.com","test_pw","7772345678","Charlie","Brown","1","2023-01-05 16:20:00","2023-11-30 21:49:08",NULL
+"10","testuser","test@gmail.com","test","34565432","tests first first","test last last","1","Sun Dec 03 2023 19:05:22 GMT+0530 (India Standard Time)","2023-12-03 19:05:22",NULL
