@@ -83,7 +83,7 @@ Navigate to the backend directory.
 
 ## Database files
 
-*/db-files* contains all the database files in all types of suitable formats (.sql, .xml, .json, .csv, etc.)
+*/db-files* folder contains all the database files in all types of suitable formats (.sql, .xml, .json, .csv, etc.)
 
 ## Additional Information
 

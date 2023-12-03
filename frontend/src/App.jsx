@@ -85,7 +85,7 @@ function App() {
                 axios.post(BaseReqUrl + ReqUrls.checkLoginAvailable)
                     .then(async (res) => {
                         const fetchedData = await res.data;
-                        log(fun, "fetchedData:", fetchedData);
+                        // log(fun, "fetchedData:", fetchedData);
 
                         const success = isJsonValueTrue(fetchedData, 'success');
                         // log(fun, "fetchedData.success:", success);

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
-import {Flexbox, Input, Label, Section} from "../../trident-react-ui";
+import {Anchor, Flexbox, Input, Label, Section} from "../../trident-react-ui";
 import {focusFormIdElement, printError, printLog, sendRequest} from "../util/AppUtils";
 import {changeStringCase, checkNullStr, getDefJsonValue, isBoolTrue, isJsonValueTrue, trimJsonValues} from "../../trident-react-ui/ReactUtils";
 import {App_THEME_VARIANT as THEME, ReqUrls, RouteUrls} from "../config/AppConfig";
@@ -44,6 +44,25 @@ const ForgotPwPage = ({}) => {
                     title={'Reset Password'}
                     shadowVariant={'sm'}>
                     {showResetPwPanel ? createResetPwPanel() : createEmailConfirmPanel()}
+
+                    {/*login, sign-up*/}
+                    <Flexbox className={'w-100 mt-0 px-2'} justifyAt={'between'}>
+                        {/*login*/}
+                        <Anchor
+                            className={'m-1 fs-sm'}
+                            asLink={true}
+                            href={RouteUrls.login}>
+                            Login
+                        </Anchor>
+
+                        {/*sign-up*/}
+                        <Anchor
+                            className={'m-1 fs-sm'}
+                            asLink={true}
+                            href={RouteUrls.signUp}>
+                            Register
+                        </Anchor>
+                    </Flexbox>
                 </Section>
             </div>
         </div>

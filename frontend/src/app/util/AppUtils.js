@@ -28,7 +28,7 @@ export async function sendRequest({
                                   }) {
     return new Promise((resolve, reject) => {
         if (checkNull(onFetchBegin)) onFetchBegin();
-        printLog(tag, `Sending request ${DebugModeOn ? `(via: ${reqUrl})` : ''}...`);
+        // printLog(tag, `Sending request ${DebugModeOn ? `(via: ${reqUrl})` : ''}...`);
         // return axios[type](reqUrl, reqOptions, axiosConfig)
         // return axios[type](reqUrl, reqOptions)
         const authToken = getSessionAuthToken();

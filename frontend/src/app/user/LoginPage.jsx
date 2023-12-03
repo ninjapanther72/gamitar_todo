@@ -39,7 +39,7 @@ const LoginPage = ({}) => {
                 className={'px-5 py-3 w-100 h-auto'}
                 title={'Login'}
                 shadowVariant={'sm'}>
-                <div className={'w-100 row p-0 m-0'}>
+                <div className={'w-100 row p-0 m-0 mt-2'}>
                     {/*username/email/mobile*/}
                     <Input
                         variant={THEME}
