@@ -65,12 +65,12 @@ Database credentials and other backend data stored in .env file.
 ## How to Run Backend
 
 1. Install Node.js and npm.
-2. Set up a MySQL server (e.g., **XAMPP**) and create a database named **gamitar_todo_db**.
+2. Set up a MySQL server (e.g., **XAMPP**) and create a database named **this-is-db-name**.
 3. Create a .env file with the following content:
-    - DB_HOST=localhost
-    - DB_USER=root
-    - DB_PASSWORD=password
-    - DB_DATABASE=gamitar_todo_db
+    - DB_HOST=db-host
+    - DB_USER=db_user
+    - DB_PASSWORD=db-password
+    - DB_DATABASE=this-is-db-name
     - SESSION_SECRET=my-secret-key
 
 Navigate to the backend directory.
