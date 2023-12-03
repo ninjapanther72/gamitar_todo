@@ -90,3 +90,29 @@ Navigate to the backend directory.
 The .env file and node_modules directories should not be shared or committed.
 For production deployment, use environment-specific configurations.
 Ensure the MySQL server is running before starting the backend server.
+
+## Images
+
+#### Login
+
+![Project Screenshot](images/login.png)
+
+#### Register
+
+![Project Screenshot](images/register_user.png)
+
+#### Reset Password Email Configuration
+
+![Project Screenshot](images/reset_pw_email.png)
+
+#### Reset Password
+
+![Project Screenshot](images/reset_pw.png)
+
+#### Todo Page
+
+![Project Screenshot](images/todo_page.png)
+
+#### My Account
+
+![Project Screenshot](images/my_ac.png)

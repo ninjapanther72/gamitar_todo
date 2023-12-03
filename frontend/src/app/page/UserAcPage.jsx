@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
-import {Avatar, Flexbox, Label, Section} from "../../trident-react-ui";
+import {Anchor, Avatar, Flexbox, Label, Section} from "../../trident-react-ui";
 import AppInterface from "../AppInterface";
 import {getSessionData, printError, printLog} from "../util/AppUtils";
 import {concatStrings, getDefJsonValue, getDefValueStr} from "../../trident-react-ui/ReactUtils";
-import {DefStrNA} from "../config/AppConfig";
+import {DefStrNA, RouteUrls} from "../config/AppConfig";
 import {Constants} from "../../trident-react-ui/config/TridentConfigs";
 
 const UserAcPage = () => {
@@ -65,6 +65,15 @@ const UserAcPage = () => {
                             </Flexbox>
                         </Flexbox>
                     </div>
+                </Flexbox>
+
+                <Flexbox className={'w-100 mt-2'} justifyAt={'end'}>
+                    <Anchor
+                        className={'m-1 fs-sm'}
+                        asLink={true}
+                        href={RouteUrls.home}>
+                        Go to Todo Page
+                    </Anchor>
                 </Flexbox>
             </Section>
         </AppInterface>

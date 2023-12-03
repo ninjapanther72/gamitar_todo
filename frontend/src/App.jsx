@@ -86,6 +86,7 @@ function App() {
                     .then(async (res) => {
                         const fetchedData = await res.data;
                         // log(fun, "fetchedData:", fetchedData);
+                        const browserUrl = window.location.href + '';
 
                         const success = isJsonValueTrue(fetchedData, 'success');
                         // log(fun, "fetchedData.success:", success);
@@ -93,12 +94,15 @@ function App() {
                         setIsLoginSuccessful(success);
                         if (success) {
                             setPageRoutes(loginRoutes);
-                            navigate(RouteUrls.home);
+                            if (browserUrl.endsWith(RouteUrls.userProfile)) {
+                                navigate(RouteUrls.userProfile);
+                            } else {
+                                navigate(RouteUrls.home);
+                            }
                         } else {
                             setPageRoutes(withoutLoginRoutes);
                             localStorage.clear();
 
-                            const browserUrl = window.location.href + '';
                             // log(fun, 'browserUrl:', browserUrl);
                             if (browserUrl.endsWith(RouteUrls.signUp)) {
                                 navigate(RouteUrls.signUp);
