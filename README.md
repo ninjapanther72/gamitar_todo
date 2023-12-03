@@ -81,6 +81,10 @@ Navigate to the backend directory.
 
 ###### Now the server will run on http://localhost:8010.
 
+## Database files
+
+*/db-files* contains all the database files in all types of suitable formats (.sql, .xml, .json, .csv, etc.)
+
 ## Additional Information
 
 The .env file and node_modules directories should not be shared or committed.
