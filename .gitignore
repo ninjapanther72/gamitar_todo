@@ -1,0 +1,9 @@
+.idea/jsLibraryMappings.xml
+.idea
+backend/node_modules/.package-lock.json
+frontend/node_modules/.package-lock.json
+backend/node_modules
+frontend/node_modules
+backend/public
+backend/package-lock.json
+backend/package.json
