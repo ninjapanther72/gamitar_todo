@@ -9,11 +9,7 @@ import {CssVariant, FormInputCls} from "../../trident-react-ui/config/TridentCon
 import {useTaskData} from "../context/TaskContext";
 
 //https://docs.google.com/document/u/0/d/1mkOK9TOjxvvZFHCsb2m8cgYuE5-PU5-r-9ajKKEkcso/mobilebasic
-//https://github.com/topics/react-todo-list
-//https://github.com/drehimself/todo-react
-//https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/
-//https://dribbble.com/shots/14100356-ToDo-App-UI
-//https://dribbble.com/shots/6454935-Your-Next-Task-Manager-App-UI
+
 const TodoPage = () => {
     const TAG = 'TodoPage.jsx';
 
