@@ -81,7 +81,7 @@ function verifyAuthToken(req, res, next) {
             jwt.verify(authToken, SESSION_SECRET_KEY, (err, decoded) => {
                 if (err) {
                     // log('verifyAuthToken.err:', err);
-                    return res.send({message: 'Authentication failed! Please try again :(', success: false});
+                    return res.send({message: 'Authentication failed! Please  try again :(', success: false});
                 } else {
                     // Token is valid, save user ID to request object for later use
                     req.userId = decoded.id;
@@ -148,9 +148,6 @@ server.post(loginReqUrl, async (req, res) => {
 });
 
 
-// Apply middleware to all routes
-// server.use(verifyAuthToken);
-
 // Apply checkIfUserLoggedIn middleware only to routes that require authentication
 // server.post('/protected', verifyAuthToken, checkIfUserLoggedIn, (req, res) => {
 // server.post('/protected', checkIfUserLoggedIn, (req, res) => {
@@ -162,6 +159,7 @@ server.post(ReqUrls.checkLoginAvailable, verifyAuthToken, (req, res) => {
     const success = checkNullJson(req.userData);
     res.send({success: success, message: success ? 'Login available' : 'Session expired, please login again'});
 });
+
 
 // Error handling middleware
 server.use((err, req, res, next) => {
@@ -219,9 +217,14 @@ server.post(registerUserReqUrl, async (req, res) => {
     }
 });
 
+
+// Apply middleware to all routes
+server.use(verifyAuthToken);
+
+
 //fetch todo-list
 const fetchTodoListReqUrl = ReqUrls.fetchTodoList;
-server.get(fetchTodoListReqUrl, verifyAuthToken, async (req, res) => {
+server.get(fetchTodoListReqUrl, async (req, res) => {
     const fun = 'fetchTodoListReqUrl:';
     log(fun, `Request received on: ${fetchTodoListReqUrl}`);
     try {
@@ -240,7 +243,7 @@ server.get(fetchTodoListReqUrl, verifyAuthToken, async (req, res) => {
 
 //add todo-item
 const todoItemAddTaskReqUrl = ReqUrls.todoItem_AddTask;
-server.post(todoItemAddTaskReqUrl, verifyAuthToken, async (req, res) => {
+server.post(todoItemAddTaskReqUrl, async (req, res) => {
     const fun = 'todoItemAddTaskReqUrl:';
     log(fun, `Request received on: ${todoItemAddTaskReqUrl}`);
     try {
@@ -260,7 +263,7 @@ server.post(todoItemAddTaskReqUrl, verifyAuthToken, async (req, res) => {
 
 //edit todo-item
 const todoItem_EditTaskReqUrl = ReqUrls.todoItem_EditTask;
-server.post(todoItem_EditTaskReqUrl, verifyAuthToken, async (req, res) => {
+server.post(todoItem_EditTaskReqUrl, async (req, res) => {
     const fun = 'todoItem_EditTaskReqUrl:';
     log(fun, `Request received on: ${todoItem_EditTaskReqUrl}`);
     try {
@@ -277,7 +280,7 @@ server.post(todoItem_EditTaskReqUrl, verifyAuthToken, async (req, res) => {
 
 //edit todo-item
 const todoItem_moveTaskToCompletedReqUrl = ReqUrls.todoItem_moveTaskToCompleted;
-server.post(todoItem_moveTaskToCompletedReqUrl, verifyAuthToken, async (req, res) => {
+server.post(todoItem_moveTaskToCompletedReqUrl, async (req, res) => {
     const fun = 'todoItem_moveTaskToCompletedReqUrl:';
     log(fun, `Request received on: ${todoItem_moveTaskToCompletedReqUrl}`);
     try {
@@ -294,7 +297,7 @@ server.post(todoItem_moveTaskToCompletedReqUrl, verifyAuthToken, async (req, res
 
 //delete todo-item
 const todoItem_deleteTaskReqUrl = ReqUrls.todoItem_deleteTask;
-server.post(todoItem_deleteTaskReqUrl, verifyAuthToken, async (req, res) => {
+server.post(todoItem_deleteTaskReqUrl, async (req, res) => {
     const fun = 'todoItem_deleteTaskReqUrl:';
     log(fun, `Request received on: ${todoItem_deleteTaskReqUrl}`);
     try {
